@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Capacitor Camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button size="small" (click)="getPicture('camera')">
+    <ion-icon name="camera" slot="start"></ion-icon>
+    <ion-label>Camera</ion-label> 
+  </ion-button>
+  <img *ngIf="photo"  [src]="photo" />
+
+</ion-content> 
